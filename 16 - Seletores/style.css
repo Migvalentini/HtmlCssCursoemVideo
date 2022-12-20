@@ -1,0 +1,40 @@
+/*
+ID = #
+CLASS = .
+
+ID = apenas um elemento 
+CLASS = mais de um elemento
+*/
+
+body {
+    background-color: rgb(240, 197, 58);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    color: rgb(0, 70, 0);
+}
+
+h1#main {
+    text-align: center;
+}
+
+h2 {
+    color: rgb(66, 80, 27);
+}
+
+.basic {
+    color: blue;
+}
+
+.intermediate {
+    color: yellow;
+}
+
+.advanced {
+    color: red;
+}
+
+.emphasis {
+    background-color: rgba(166, 255, 0, 0.829);
+}

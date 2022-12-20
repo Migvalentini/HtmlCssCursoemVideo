@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Classes and Pseudo Elements</title>
+    <style>
+        /*  CUSTOMIZED SELECTORS
+            :  = pseudo classes
+            :: = pseudo element
+            >  = children
+        */
+        div#example1 {
+            display: inline-block;
+            background-color: lightgray;
+            border: 1px solid black;
+            text-align: center;
+            height: 200px;
+            width: 200px;
+        }
+
+        div:hover#example1 {
+            background-color: yellow;
+        }
+
+        div > p {
+            display: none;
+        }
+
+        div:hover > p {
+            display: block;
+            color: white;
+            background-color: red;
+            width: auto;
+        }
+
+        #mouseover {
+            color: red;
+        }
+
+        a {
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:visited {
+            color: blue;
+        }
+
+        a:hover {
+            color: black;
+            text-decoration: none;
+        }
+
+        a:active {
+            color: yellow;
+        }
+
+        a::before {
+            content: '=>';
+        }
+
+        a::after {
+            content: '<=';
+        }
+    </style>
+</head>
+<body>
+    <div id="example1">01</div>
+    <div id="example1">02</div>
+    <div id="example1">03</div>
+    <h1>Hover Example</h1>
+    <p>Mouse over the text below</p>
+    <div id="mouseover">
+        Mouse over here
+        <p>Hidden Text</p>
+    </div>
+    <h1>Customizing Links</h1>
+    <ul>
+        <li><a href="https://gustavoguanabara.github.io" target="_blank">GitHub</a></li>
+        <li><a href="https://youtube.com/cursoemvideo/" target="_blank">YouTube</a></li>
+        <li><a href="https://www.cursoemvideo.com" target="_blank">Website</a></li>
+    </ul>
+</body>
+</html>

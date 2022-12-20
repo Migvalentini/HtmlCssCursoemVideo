@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        h1 {
+            background-color: lightcyan;
+            height: 300px;
+            width: 300px;
+            border-width: 10px;
+            border-style: solid;
+            border-color: cyan;
+            /*border: 10px solid cyan;*/
+            /*width, style e color respectivamente*/
+
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            /*padding: 10px 10px 10px 10px;*/
+            /*padding: 10px; vale para todos*/
+            /*padding: 10px 20px; 10=cima e baixo, 20=esquerda e direita*/
+
+            /*margin-top: 10px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            margin-left: 10px;
+            margin: 10px 10px 10px 10px*/
+            margin: 20px auto 40px auto;
+
+            outline-width: 5px;
+            outline-style: dashed;
+            outline-color: salmon;
+            /*outline: 5px dashed salmon*/
+        }
+
+        a {
+            border-width: 5px;
+            border-style: solid;
+            border-color: red;
+            /*border: 5px solid red*/
+
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            /*padding: 10px 10px 10px 10px*/
+        }
+    </style>
+</head>
+<body>
+    <!-- BOX LEVEL quebra linhas automaticamente-->
+    <!-- div, h1-h6, p, main, header, nav, article, aside, footer, form, video -->
+    <h1>Box-Level Example</h1>
+    <p>Paragraphs are example of box-level, but the <a href="#">links are example of inline-level.</a> Let's see how it works</p>
+
+    <!-- INLINE LEVEL não quebra linhas automaticamente-->
+    <!-- span, a, code, small, strong, em, sup, sub, label, button, input, select -->
+
+    <a href="box2.html">Box 2</a>
+    <a href="box3.html">Box 3</a>
+</body>
+</html>
