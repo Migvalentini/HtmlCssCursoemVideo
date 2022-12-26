@@ -21,7 +21,7 @@ header > h1 {
     max-height: 200px;
     color: rgb(255, 255, 255);
     font-family: var(--font1);
-    font-size: 6em;
+    font-size: 10vh;
     padding-top: 50px;
     margin-bottom: 0px;
 }
