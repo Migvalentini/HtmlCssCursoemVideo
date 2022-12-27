@@ -21,29 +21,32 @@ header > h1 {
     max-height: 200px;
     color: rgb(255, 255, 255);
     font-family: var(--font1);
-    font-size: 10vh;
+    font-size: 15vh;
     padding-top: 50px;
     margin-bottom: 0px;
 }
 
-header > p > a {
+header h2 a {
     color: rgb(255, 255, 255);
     text-decoration: none;
     font-style: normal;
     font-family: var(--font2);
+    margin-bottom: 20px;
 }
 
-header > p > a:hover {
+header > h2 > a:hover {
     text-decoration: underline;
 }
 
 p {
     font-family: var(--font2);
-    font-size: large;
+    font-size: 3vmax;
+    padding-left: 50px;
+    padding-top: 0px;
 }
 
 .normal {
-    height: 600px;
+    height: max-content;
 }
 
 .image {
@@ -51,7 +54,10 @@ p {
 }
 
 .background {
-    background-color: blue;
+    background-color: #000800ce;
+    color: white;
+    width: max-content;
+    height: max-content;
 }
 
 #image1 {
@@ -61,6 +67,7 @@ p {
 
 #image2 {
     background-image: url('imagens/background002.jpg');
+    background-position: center center;
 }
 
 footer {
