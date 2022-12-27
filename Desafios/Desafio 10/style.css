@@ -37,6 +37,32 @@ header > p > a:hover {
     text-decoration: underline;
 }
 
+p {
+    font-family: var(--font2);
+    font-size: large;
+}
+
+.normal {
+    height: 600px;
+}
+
+.image {
+    height: 600px;
+}
+
+.background {
+    background-color: blue;
+}
+
+#image1 {
+    background-image: url('imagens/background001.jpg');
+    background-position: center center;
+}
+
+#image2 {
+    background-image: url('imagens/background002.jpg');
+}
+
 footer {
     background-color: black;
     text-align: center;
