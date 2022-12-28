@@ -11,9 +11,13 @@
     padding: 0px;
 }
 
+body {
+    min-height: 100vh;
+}
+
 header {
     background-color: black;
-    height: 200px;
+    height: 15em;
     text-align: center;
 }
 
@@ -21,9 +25,10 @@ header > h1 {
     max-height: 200px;
     color: rgb(255, 255, 255);
     font-family: var(--font1);
-    font-size: 15vh;
+    font-size: 10vw;
     padding-top: 50px;
     margin-bottom: 0px;
+    font-variant: small-caps;
 }
 
 header h2 a {
@@ -38,11 +43,21 @@ header > h2 > a:hover {
     text-decoration: underline;
 }
 
-p {
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 0px;
+}
+
+.normal p {
     font-family: var(--font2);
-    font-size: 3vmax;
-    padding-left: 50px;
-    padding-top: 0px;
+    font-size: 4vmax;
+    padding: 50px;
+}
+
+.image p {
+    font-family: var(--font2);
+    font-size: 4vmax;
 }
 
 .normal {
@@ -50,30 +65,38 @@ p {
 }
 
 .image {
-    height: 600px;
+    height: max-content;
 }
 
 .background {
+    display: inline-block;
     background-color: #000800ce;
     color: white;
     width: max-content;
     height: max-content;
+    padding: 50px 50px 50px 10px;
+    margin-left: 40px;
 }
 
 #image1 {
     background-image: url('imagens/background001.jpg');
     background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 #image2 {
     background-image: url('imagens/background002.jpg');
     background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 footer {
     background-color: black;
     text-align: center;
     color: rgb(255, 255, 255);
+    height: max-content;
 }
 
 footer a {
@@ -87,4 +110,9 @@ footer a:hover {
 
 footer a::after {
     content: '\1F517';
+}
+
+footer p {
+    font-size: medium;
+    padding: 0px;
 }
