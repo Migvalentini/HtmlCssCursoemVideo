@@ -17,7 +17,7 @@ body {
 
 header {
     background-color: black;
-    height: 15em;
+    height: max-content;
     text-align: center;
 }
 
