@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
 
@@ -11,7 +12,7 @@
     padding: 0px;
 }
 
-body {
+body, html {
     min-height: 100vh;
 }
 
@@ -22,12 +23,10 @@ header {
 }
 
 header > h1 {
-    max-height: 200px;
+    padding-top: 50px;
     color: rgb(255, 255, 255);
     font-family: var(--font1);
     font-size: 10vw;
-    padding-top: 50px;
-    margin-bottom: 0px;
     font-variant: small-caps;
 }
 
@@ -39,7 +38,7 @@ header h2 a {
     margin-bottom: 20px;
 }
 
-header > h2 > a:hover {
+header > h2 > a:hover, footer > p > a:hover {
     text-decoration: underline;
 }
 
@@ -47,6 +46,7 @@ section {
     padding-top: 10vh;
     padding-bottom: 10vh;
     padding-left: 0px;
+    font-size: 3.5vw;
 }
 
 .normal p {
@@ -56,6 +56,7 @@ section {
 }
 
 .image p {
+    display: inline-block;
     font-family: var(--font2);
     font-size: 4vmax;
 }
@@ -72,8 +73,7 @@ section {
     display: inline-block;
     background-color: #000800ce;
     color: white;
-    width: max-content;
-    height: max-content;
+    
     padding: 50px 50px 50px 10px;
     margin-left: 40px;
 }
@@ -102,10 +102,6 @@ footer {
 footer a {
     color: rgb(255, 255, 255);
     text-decoration: none;
-}
-
-footer a:hover {
-    text-decoration: underline;
 }
 
 footer a::after {
