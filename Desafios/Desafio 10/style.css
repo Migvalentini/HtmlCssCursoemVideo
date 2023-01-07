@@ -18,7 +18,6 @@ body, html {
 
 header {
     background-color: black;
-    height: max-content;
     text-align: center;
 }
 
@@ -43,22 +42,21 @@ header > h2 > a:hover, footer > p > a:hover {
 }
 
 section {
-    padding-top: 10vh;
-    padding-bottom: 10vh;
-    padding-left: 0px;
-    font-size: 3.5vw;
+    padding: 10vh 0px 10vh 0px;
+    font-size: 3.3vw;
+    white-space: nowrap;
 }
 
 .normal p {
     font-family: var(--font2);
-    font-size: 4vmax;
+    font-size: 3.4vmax;
     padding: 50px;
 }
 
 .image p {
     display: inline-block;
     font-family: var(--font2);
-    font-size: 4vmax;
+    font-size: 3.4vmax;
 }
 
 .normal {
@@ -74,7 +72,7 @@ section {
     background-color: #000800ce;
     color: white;
     
-    padding: 50px 50px 50px 10px;
+    padding: 50px 10px 50px 10px;
     margin-left: 40px;
 }
 
@@ -109,6 +107,6 @@ footer a::after {
 }
 
 footer p {
-    font-size: medium;
-    padding: 0px;
+    font-size: large;
+    padding: 5px;
 }
