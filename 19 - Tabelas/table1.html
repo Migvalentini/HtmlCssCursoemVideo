@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+    <style>
+        table {
+            width: 500px;  
+            height: 500px;
+            border-collapse: collapse;  
+            border: 4px solid blue;
+        }
+
+        td {
+            border: 3px solid black;
+            padding: 10px;
+            font-size: xx-large;
+            text-align: center;
+            vertical-align: top;
+        }
+
+        .number {
+            text-align: right;
+        }
+
+        .middle {
+            vertical-align: middle;
+        }
+
+        .bottom {
+            vertical-align: bottom;
+        }
+
+        .left {
+            text-align: left;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        .right {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <h1>My First Table</h1>
+    <!--
+        Simple Table Hierarchy
+        Table = tabela
+            Table Row = linha de tabela
+            Table Data = dado de tabela
+    -->
+    <table>
+        <tr>
+            <td>A1</td>
+            <td class="middle">B1</td>
+            <td class="bottom">C1</td>
+        </tr>
+        <tr>
+            <td class="left">A2</td>
+            <td class="center">B2</td>
+            <td class="right">C2</td>
+        </tr>
+        <tr>
+            <td>A3</td>
+            <td>B3</td>
+            <td>C3</td>
+        </tr>
+        <tr>
+            <td>A4</td>
+            <td>B4</td>
+            <td>C4</td>
+        </tr>
+    </table>
+</body>
+</html>
