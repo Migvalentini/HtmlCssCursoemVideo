@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+    <style>
+        table {
+            width: 500px;
+            border-collapse: collapse;
+        }
+
+        caption {
+            font-size: 1.3em;
+            font-weight: bolder;
+            padding: 8px;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+        }
+
+        col.cname {
+            background-color: blue;
+        }
+
+        col.cgroup {
+            background-color: brown;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <colgroup>
+            <col class="cname">
+            <col class="cgroup" span="2">
+            <col class="cprof">
+        </colgroup>
+        <caption>Registration</caption>
+        <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Sex</th>
+            <th scope="col">Age</th>
+            <th scope="col">Profession</th>
+        </tr>
+        <tr>
+            <td>Ana Maria</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Journalist</td>
+        </tr>
+            <td>Cláudio</td>
+            <td>M</td>
+            <td>28</td>
+            <td>Programmer</td>
+        </tr>
+            <td>Gustavo</td>
+            <td>M</td>
+            <td>42</td>
+            <td>Engineer</td>
+        </tr>
+            <td>Paula</td>
+            <td>F</td>
+            <td>57</td>
+            <td>Doctor</td>
+        </tr>
+    </table>
+</body>
+</html>
