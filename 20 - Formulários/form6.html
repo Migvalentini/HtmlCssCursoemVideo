@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <form action="registration.php" method="POST" autocomplete="on">
+        <p>
+            <label for="icolor">Color: </label>
+            <input type="color" name="color" id="icolor" value="#00ff00">
+        </p>
+        <p>
+            <label for="ilevel">Satisfaction Level: </label>
+            <input type="range" name="level" id="ilevel" min="1" max="5" value="1">
+        </p>
+        <p>
+            <label for="ifile">Profile Photo: </label>
+            <input type="file" name="file" id="ifile">
+            <!--OBRIGATÓRIO USO DO MÉTODO POST-->
+        </p>
+        <p>
+            <input type="submit" value="Confirm">
+            <input type="reset" value="Reset">
+        </p>
+    </form>
+</body>
+</html>

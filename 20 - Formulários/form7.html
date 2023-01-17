@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <form action="registration.php" method="POST" autocomplete="on">
+        <p>
+            <label for="ista">State: </label>
+            <select name="state" id="ista">
+                <option value="">=== Choice ===</option>
+                <optgroup label="Southeast Region">
+                    <option value="MG">Minas Gerais</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="SP">São Paulo</option>
+                </optgroup>
+
+                <optgroup label="Northeast Region">
+                    <option value="MA">Maranhão</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                </optgroup>
+            </select>
+        </p>
+        <p>
+            <label for="iprof">Profession: </label>
+            <input type="text" name="prof" id="iprof" list="listprof">
+            <datalist id="listprof">
+                <option value="ADM">Administrator</option>
+                <option value="DEV">Developer</option>
+                <option value="PROG">Programmer</option>
+            </datalist>
+        </p>
+        <p>
+            <label for="imsg">Message: </label> <br>
+            <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+            <!--USAR O MÉTODO POST-->
+        </p>
+        <p>
+            <input type="submit" value="Confirm">
+            <input type="reset" value="Reset">
+        </p>
+    </form>
+</body>
+</html>
