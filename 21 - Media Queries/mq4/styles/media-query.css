@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+/*All other Medias*/
+
+/*Typical Device Breakpoints 18/01/2023
+Small Screens: until 600px
+Smartphone: from 600px to 768px
+Tablet: from 768px to 992px
+Desktop: from 992px to 1200px
+TV: up to 1200px
+*/
+
+@media print { /* PRINTER */
+    * {font-family: 'Courier New', Courier, monospace;}
+    body {background-image: url('../images/back-print.jpg'); } /*DOES'T WORK*/
+    main::after {content: 'This impression was made by www.github.com/Migvalentini';}
+    main {border: 2px solid black;}
+    main h1 {text-shadow: none; color: black;}
+    img#phone {display: none;}
+    img#tablet {display: none;}
+    img#print {display: block;}
+    img#pc {display: none;}
+    img#tv {display: none;}
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) { /* TABLET */
+    body {background-image: url('../images/back-tablet.jpg');}
+    img#phone {display: none;}
+    img#tablet {display: block;}
+    img#print {display: none;}
+    img#pc {display: none;}
+    img#tv {display: none;}
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) { /* DESKTOP */
+    body {background-image: url('../images/back-pc.jpg');}
+    img#phone {display: none;}
+    img#tablet {display: none;}
+    img#print {display: none;}
+    img#pc {display: block;}
+    img#tv {display: none;}
+}
+
+@media screen and (min-width: 1200px) { /* LARGE SCREENS */
+    body {background-image: url('../images/back-tv.jpg');}
+    img#phone {display: none;}
+    img#tablet {display: none;}
+    img#print {display: none;}
+    img#pc {display: none;}
+    img#tv {display: block;}
+}
