@@ -7,8 +7,9 @@
     <title>Media Query</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css" media="all">
+    <link rel="stylesheet" href="styles/media-query.css">
 </head>
-<body>
+<body onresize="chanceSize()">
     <header>
         <h1>My Website</h1>
         <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>
@@ -42,6 +43,14 @@
             }
             
         }
+
+        function chanceSize() {
+            if (window.innerWidth >= 768) {
+                items.style.display = 'block'
+            } else {
+                items.style.display = 'none'
+            }
+        } 
     </script>
 </body>
 </html>
