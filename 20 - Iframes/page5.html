@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+    <style>
+        body {
+            background-color: cadetblue;
+        }
+    </style>
+</head>
+<body>
+    <a href="#" onclick="clickMe()">Click Me</a>
+    <div id="exit">
+
+    </div>
+    <script>
+        function clickMe() {
+            s = window.document.getElementById("exit")
+            s.innerHTML += '<p>You Clicked Me</p>'
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iframe</title>
+</head>
+<body>
+    <!--
+        não confundir iframe com frame
+        iframes podem causar problemas para o mecanismo de busca do google (cuidar com isso)
+        iframes podem ter problemas de segurança - cuidar quias sites usar iframe 
+    -->
+    <h1>My Main Website</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa ipsum optio facilis non minima neque repellat at hic obcaecati quo unde nemo tempore, sint id quisquam sapiente voluptate harum excepturi?</p>
+    <iframe src="page4.html" referrerpolicy="no-referrer" sandbox="allow-same-origin allow-forms allow-scripts"> <!--Protege os dados dentro do iframe (sandbox="sandbox" : maior segurança)-->
+        <p>Your browser doesn't support iframe</p>
+    </iframe>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta laborum nemo pariatur quaerat architecto molestias repellendus quo error enim, laudantium deleniti, rerum animi ullam id reiciendis blanditiis aspernatur quibusdam accusamus.
+    Consequuntur a dolor voluptatem molestiae fugiat voluptates quos numquam! Tempora deleniti voluptate dicta iusto iste, hic sunt nisi nihil molestias magnam atque dolor adipisci dolores, nesciunt rem, exercitationem ut aspernatur?</p>
+</body>
+</html>
