@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+:root {
+    --green: #49a09d;
+    --lilac: #5f2c82;
+}
+
+main {
+    background-image: linear-gradient(to bottom, var(--green), var(--lilac));
+}

@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+/*
+    Color Palette
+    Green: #49a09d
+    Lilac: #5f2c82
+*/
+
+:root {
+    --green: #49a09d;
+    --lilac: #5f2c82;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color:  var(--lilac);
+}
