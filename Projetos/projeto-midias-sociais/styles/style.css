@@ -40,12 +40,6 @@ iframe#screen {
     height: 471px;
 }
 
-section#social-medias {
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%); 
-}
-
 section#social-medias img {
     border-radius: 50%;
     width: 50px;
