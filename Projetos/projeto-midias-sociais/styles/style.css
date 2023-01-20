@@ -31,3 +31,32 @@ section#phone {
     width: 311px;
     background: url('../imagens/frame-iphone.png') no-repeat;
 }
+
+iframe#screen {
+    position: relative;
+    top: 80px;
+    left: 22px;
+    width: 267px;
+    height: 471px;
+}
+
+section#social-medias {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%); 
+}
+
+section#social-medias img {
+    border-radius: 50%;
+    width: 50px;
+    margin: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+    box-sizing: border-box;
+}
+    
+section#social-medias img:hover {
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    transform: translate(-3px, -3px);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6);
+    transition: transform 0.5s;
+}
