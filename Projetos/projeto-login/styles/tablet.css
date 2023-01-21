@@ -5,6 +5,32 @@
     --lilac: #5f2c82;
 }
 
-main {
-    background-image: linear-gradient(to bottom, var(--green), var(--lilac));
+body {
+    background-image: linear-gradient(to top, var(--green), var(--lilac));
+}
+
+section#login {
+    width: 80vw;
+    height: 285px;
+}
+
+section#login > div#image {
+    float: left;
+    width: 30%;
+    height: 100%;
+}
+
+section#login > div#form {
+    float: right;
+    width: 70%;
+}
+
+div#form > h1 {
+    font-size: 1.5em;
+}
+
+div#form > p {
+    font-size: 1em;
+    text-indent: 30px;
+    padding-bottom: 15px;
 }

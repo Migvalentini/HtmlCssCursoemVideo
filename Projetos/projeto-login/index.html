@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Project</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css" media="all">
     <link rel="stylesheet" href="styles/tablet.css" media="screen and (min-width: 768px) and (max-width: 992px)">
     <link rel="stylesheet" href="styles/desktop.css" media="screen and (min-width: 992px)">
@@ -18,8 +19,21 @@
             <div id="form">
                 <h1>Login</h1>
                 <p>Welcome again. Log in to access your account and be able to configure the settings in your environment</p>
-                <form action="registration.php" method="post">
-
+                <form action="registration.php" method="post" autocomplete="on">
+                    <div class="field">
+                        <i class="material-icons">person</i>
+                        <input type="email" name="login" id="ilogin" placeholder="Enter your Email:" autocomplete="email" required>
+                        <label for="ilogin">Login</label>
+                    </div>
+                    <div class="field">
+                        <i class="material-icons">key</i>
+                        <input type="password" name="password" id="ipassword" placeholder="Enter your Password:" autocomplete="current-password" required minlength="8" maxlength="20">
+                        <label for="ipassword">Password</label>
+                    </div>
+                    <input type="submit" value="Enter">
+                    <a href="forgot.html" class="button">
+                        I forgot my password <i class="material-icons">mail</i>
+                    </a>
                 </form>
             </div>
         </section>
