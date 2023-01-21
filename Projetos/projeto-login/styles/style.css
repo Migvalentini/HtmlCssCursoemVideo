@@ -20,7 +20,7 @@
 
 body, html {
     background-color: var(--lilac);
-    height: 100vh;
+    height: 90vh;
     width: 100vw;
 }
 
@@ -100,7 +100,7 @@ div.field > input {
     border: 0px;
     border-radius: 6px;
     padding: 3px;
-    transform: translateY(-4px);
+    transform: translateY(-5px);
 }
 
 div.field > input:focus-within {
